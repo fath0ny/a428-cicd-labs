@@ -33,6 +33,6 @@ scrape_configs:
     scrape_native_histograms: true
 
   - job_name: "jenkins"
-    metrics_path: /prom/
+    metrics_path: /jenkins/prom/
     static_configs:
        - targets: ["jenkins-blueocean:8080"]
